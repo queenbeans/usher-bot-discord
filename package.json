@@ -1,0 +1,34 @@
+{
+  "name": "usher-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot that escorts people into channels and can direct people out of channels if they are inactive",
+  "main": "./src/bot.js",
+  "scripts": {
+    "run": "node ./dist/bot.js",
+    "build": "babel ./src --out-dir dist",
+    "watch:dev": "nodemon",
+    "test": "test"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "nodemon": {
+    "exec": "npm-run-all build run",
+    "watch": ["./src"],
+    "ignore": ["**/__tests__/**", "*.test.js", "*.spec.js"]
+  },
+  "type": "module",
+  "author": "Queen Beans (booberella)",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "discord.js": "^12.4.1",
+    "nodemon": "^2.0.6",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  }
+}
