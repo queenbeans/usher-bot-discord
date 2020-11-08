@@ -1,4 +1,4 @@
-import canReplyToMessage from './messages/canReply.js';
+import canReplyToMessage from './canReplyToMessage.js';
 
 const getPermissions = (member) => ({
     ...canReplyToMessage(member)

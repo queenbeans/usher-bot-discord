@@ -1,5 +1,5 @@
 import { Client } from 'discord.js';
-import createMessageBroker from '../commands/message.js';
+import createMessageBroker from '../botEvents/message.js';
 import configData from './configData/configData.js';
 
 const getBotToken = () => ({

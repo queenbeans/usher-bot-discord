@@ -1,6 +1,6 @@
 import getCommand from '../utils/messages/getCommand.js';
-import usherOutOfChannel from './../features/usherOutOfChannel/usherOutOfChannel.js';
-import usherBotCalled from './../utils/messages/usherBotCalled.js';
+import usherOutOfChannel from '../features/usherOutOfChannel/usherOutOfChannel.js';
+import usherBotCalled from '../utils/messages/usherBotCalled.js';
 
 const createMessageBroker = client => {
     client.on("message", (message) => {
