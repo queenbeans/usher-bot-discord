@@ -32,7 +32,7 @@ const initClient = () => {
     return client;
 }
 
-const initApp = () => {
+const initApp = async() => {
     const client = initClient();
     createMessageBroker(client);
 }
